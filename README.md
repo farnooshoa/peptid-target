@@ -1,4 +1,4 @@
-###HER2 Mutation Analysis and Peptide Candidate Generation###
+# HER2 Mutation Analysis and Peptide Candidate Generation #
 *Overview
 This project focuses on identifying and analyzing key mutations in the HER2 protein, a well-known oncogenic target, and generating peptide candidates for therapeutic development. The workflow includes:
 
