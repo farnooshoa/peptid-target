@@ -1,22 +1,31 @@
-# HER2 Mutation Analysis and Peptide Candidate Generation #
-## overview ##
-This project focuses on identifying and analyzing key mutations in the HER2 protein, a well-known oncogenic target, and generating peptide candidates for therapeutic development. The workflow includes:
+# Peptid-Target: High-Affinity Targeting Peptides for HER2
 
-- **Data Preprocessing** : Cleaning and filtering mutation data to focus on the extracellular domain (ECD) of HER2.
+## Overview
+This project, `peptid-target`, aims to identify and analyze key mutations in the HER2 protein—a critical oncogenic receptor—and generate high-affinity peptide candidates for therapeutic development. Focusing on the extracellular domain (ECD) of HER2, it integrates computational bioinformatics with biological insights to support modern drug design. The workflow includes:
 
-- **Sequence Analysis** : Mapping mutations to the HER2 protein sequence and identifying functional regions.
+- **Data Preprocessing:** Cleans and filters mutation data to target the HER2 ECD (residues 1–645).
+- **Sequence Analysis:** Maps mutations onto the HER2 reference sequence and identifies functional regions.
+- **Peptide Candidate Generation:** Extracts peptide sequences surrounding mutation sites for downstream analysis and validation.
 
-- **Peptide Candidate Generation** : Extracting peptide sequences around mutation sites for further analysis and experimental validation.
+This project showcases a scalable, automated approach to computational peptide design, with potential applications in precision oncology.
 
-This project demonstrates the integration of computational methods with biological insights, aligning with modern approaches in computational drug design.
+## Features
+- **Data Preprocessing:** Filters mutation datasets to isolate ECD-specific mutations (residues 1–645).
+- **Sequence Mapping:** Aligns mutations to the HER2 sequence, validated against UniProt’s reference (P04626).
+- **Functional Region Identification:** Pinpoints critical regions, like the dimerization domain, and flags relevant mutations.
+- **Peptide Candidate Generation:** Produces peptide sequences around mutation sites, adjustable for length and context.
+- **Scalable Workflow:** Built for automation and adaptability to large-scale genomic datasets.
 
-## Features ##
-- **Data Preprocessing** : Filters mutation data to focus on the extracellular domain (residues 1–645) of HER2.
+## About
+`Peptid-Target` focuses on generating high-affinity peptides tailored to the HER2 receptor, a key target in cancer therapy. By leveraging mutation data and sequence analysis, it bridges computational tools and experimental potential, aiming to contribute to targeted therapeutic strategies.
 
-- **Sequence Mapping** : Maps mutations to the HER2 protein sequence and validates them against the reference sequence.
+## Future Tasks
+To expand the project’s scope and utility, I plan to:
+- **Integrate Structural Analysis:** Incorporate HER2 3D structure data (e.g., PDB files) to assess mutation impacts on peptide binding affinity.
+- **Enhance Peptide Design:** Implement machine learning models (e.g., ESM-2 or RF predictors) to optimize peptide affinity and specificity.
+- **Add Validation Pipeline:** Include in silico binding affinity scoring (e.g., via molecular docking tools like AutoDock) for generated peptides.
+- **Support Multi-Receptor Analysis:** Extend the workflow to other receptors (e.g., EGFR) for broader therapeutic applications.
+- **Develop Visualization Tools:** Add plotting capabilities (e.g., with Matplotlib or PyMOL) to visualize mutation hotspots and peptide interactions.
+- **Automate Data Retrieval:** Fetch mutation data directly from databases like COSMIC or cBioPortal via APIs.
+- **Create a User Interface:** Build a CLI or web app to make the tool accessible to non-coders.
 
-- **Functional Region Identification** : Identifies key functional regions (e.g., dimerization domain) and extracts mutations within these regions.
-
-- **Peptide Candidate Generation** : Generates peptide sequences around mutation sites for further analysis.
-
-- **Scalable Workflow** : Designed for automation and scalability, making it suitable for larger datasets.
